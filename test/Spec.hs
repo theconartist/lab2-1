@@ -25,9 +25,9 @@ main = hspec $ do
     describe "lowercase" $
         it "contains the lower-case characters from a to z" $
             L.lowercase == "abcdefghijklmnopqrstuvwxyz"
-    describe "factorsOfTwo" $
-        it "contains the factors of two for 1 to 10" $
-            L.factorsOfTwo == [2,4,8,16,32,64,128,256,512,1024]
+    describe "powersOfTwo" $
+        it "contains the powers of two for 1 to 10" $
+            L.powersOfTwo == [2,4,8,16,32,64,128,256,512,1024]
     describe "factorials" $
         it "contains the factorials for 1 to 10" $
             L.factorials == [1,2,6,24,120,720,5040,40320,362880,3628800]

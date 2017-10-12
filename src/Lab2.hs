@@ -22,8 +22,8 @@ lowercase = undefined
 
 -- 4. Using a list comprehension, define a list of the powers of two for
 -- the exponents from 1 to 10.
-factorsOfTwo :: Num a => [a]
-factorsOfTwo = undefined
+powersOfTwo :: Num a => [a]
+powersOfTwo = undefined
 
 -- 5. Using a list comprehension, define a list of the factorials of the
 -- numbers 1 to 10.

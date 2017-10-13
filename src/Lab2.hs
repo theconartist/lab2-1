@@ -48,4 +48,10 @@ noMoreThanFive = undefined
 evens :: [Int]
 evens = undefined
 
+-- 9. Write a function which, given some natural number n, produces a list of
+-- all multiples of 3 and 5 in the range of 0 to n (inclusive). For example,
+-- multiples 10 = [0,3,5,6,9,10]
+multiples :: Int -> [Int]
+multiples n = undefined
+
 --------------------------------------------------------------------------------

@@ -13,6 +13,17 @@ import qualified Lab2 as L
 
 --------------------------------------------------------------------------------
 
+-- | Calculates the nth triangle number.
+tri :: Int -> Int
+tri n = n * (n + 1) `div` 2
+
+-- | Determines whether n is the sum of all multiples of 3 and 5 from 0..m
+isSum :: Int -> Int -> Bool
+isSum n m = tri (m `div` 3) * 3
+          + tri (m `div` 5) * 5
+          - tri (m `div` 15) * 15
+          == n
+
 -- | The main entry point to the test suite.
 main :: IO ()
 main = hspec $ do
@@ -46,5 +57,11 @@ main = hspec $ do
             length (nub L.evens) == 51
         it "only contains even numbers" $
             null (filter odd L.evens)
+    describe "sumOfMultiples" $ do
+        prop "produces the right number of elements" $
+            \(Positive n) -> length (L.multiples n) - 1 ==
+                             n `div` 3 + n `div` 5 - n `div` 15
+        prop "elements add up to the right values" $
+            \(Positive n) -> isSum (sum $ L.multiples n) n
 
 --------------------------------------------------------------------------------

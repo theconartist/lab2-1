@@ -43,7 +43,7 @@ coords = undefined
 noMoreThanFive :: (Num a, Enum a) => [(a,a)]
 noMoreThanFive = undefined
 
--- 8. Using a list comprehension with a predicate, define a list of all evens
+-- 8. Using a list comprehension with a predicate, define a list of all even
 -- numbers from 0 to 100.
 evens :: [Int]
 evens = undefined

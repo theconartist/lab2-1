@@ -57,7 +57,7 @@ main = hspec $ do
             length (nub L.evens) == 51
         it "only contains even numbers" $
             null (filter odd L.evens)
-    describe "sumOfMultiples" $ do
+    describe "multiples" $ do
         prop "produces the right number of elements" $
             \(Positive n) -> length (L.multiples n) - 1 ==
                              n `div` 3 + n `div` 5 - n `div` 15

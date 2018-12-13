@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
--- Functional Programming (CS256)                                             --
--- Lab 2: Types                                                               --
+-- Functional Programming (CS141)                                             --
+-- Lab 2: Types & list comprehensions                                         --
 --------------------------------------------------------------------------------
 
 import Test.Hspec

@@ -1,2 +1,1 @@
-# lab2
-Types
+# Lab 2: Types & list comprehensions
